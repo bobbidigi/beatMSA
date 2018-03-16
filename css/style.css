@@ -259,7 +259,7 @@ header {
 
 .tagline {
     font-size: 23px;
-    font-weight: 300;
+    font-weight: 500;
     color: #fff;
     max-width: 800px;
     margin: 0 auto;
@@ -650,4 +650,8 @@ header {
         text-align: center;
         margin-top: 2rem;
     }
+}
+
+.hide{
+    display: none;
 }
