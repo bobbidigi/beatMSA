@@ -37,7 +37,7 @@ body {
 }
 
 a {
-    color: #e38cb7;
+    color: #e877ff;
 }
 
 a:hover,
@@ -84,12 +84,13 @@ p {
 }
 
 p.lead {
-    color: #e38cb7;
+    color: #666;
     margin-bottom: 2rem;
 }
 
 .text-primary {
-    color: #e38cb7 !important;
+    letter-spacing: .03em;
+    color: pink!important;
 }
 
 .light-font {
@@ -105,19 +106,23 @@ p.lead {
 }
 
 .btn-outline-light:hover {
-    color: #d6619c;
+    color: #a472c0;
 }
 
 .btn-primary {
-    border-radius: 3px;
-    background-image: -moz-linear-gradient( 122deg, #633991 0%, #d6619c 100%);
-    background-image: -webkit-linear-gradient( 122deg, #633991 0%, #d6619c 100%);
-    background-image: -ms-linear-gradient( 122deg, #633991 0%, #d6619c 100%);
-    background-image: linear-gradient( 122deg, #633991 0%, #d6619c 100%);
-    box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.2);
-    font-weight: 500;
-    padding: 0.6rem 2rem;
+    font-size: 16px;
+    font-family: Open Sans Condensed;
+    border-radius: 4px;
+    background-image: -moz-linear-gradient( 90deg, #633991 0%, #a472c0 10%, #a472c0 93%, #d6619c 100%);
+    background-image: -webkit-linear-gradient( 90deg, #633991 0%, #a472c0 10%, #a472c0 93%, #d6619c 100%);
+    background-image: -ms-linear-gradient( 90deg, #633991 0%, #a472c0 10%, #a472c0 93%, #d6619c 100%);
+    
+    background-image: linear-gradient( 1deg, #633991 0%, #a472c0 10%, #a472c0 93%, #d6619c 100%);
+    box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.6);
+    font-weight: 700;
+    padding:15px 20px;
     border: 0;
+    transition: all 5s;
 }
 
 .btn-primary:hover,
@@ -154,7 +159,7 @@ p.lead {
 }
 
 .section {
-    padding: 80px 0;
+    padding: 5em 0;
 }
 
 .section-title {
@@ -187,9 +192,11 @@ p.lead {
 .nav-menu.is-scrolling,
 .nav-menu.menu-is-open {
     background-color: rgba(74, 13, 143,.1);
-    background: -moz-linear-gradient(135deg, rgb(74, 13, 143) 0%, rgb(250, 42, 143) 100%);
-    background: -webkit-linear-gradient(135deg, rgb(74, 13, 143) 0%, rgb(250, 42, 143) 100%);
-    background: linear-gradient(135deg, rgb(74, 13, 143) 0%, rgb(250, 42, 143) 100%);
+    
+    background: -moz-linear-gradient(45deg, rgb(74, 13, 143) 0%, rgb(164,114,192) 33%, rgb(250, 42, 143) 100%);
+    background: -webkit-linear-gradient(45deg, rgb(74, 13, 143) 0%, rgb(164,114,192) 33%, rgb(250, 42, 143) 100%);
+    background: linear-gradient(25deg, rgb(74, 13, 143) 0%, rgb(164,114,192) 50%, rgb(250, 42, 143) 100%);
+    
     -webkit-box-shadow: 0px 5px 23px 0px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0px 5px 23px 0px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 5px 23px 0px rgba(0, 0, 0, 0.1);
@@ -213,7 +220,7 @@ p.lead {
     }
     .navbar-nav>.nav-item>.nav-link.active:after {
         content: "";
-        border-bottom: 2px solid #cd99d4;
+        border-bottom: 2px solid #a472c0;
         left: 1rem;
         right: 1rem;
         bottom: 5px;
@@ -292,9 +299,9 @@ header {
 
 .gradient-fill:before {
     color: #fc73b4;
-    background: -moz-linear-gradient(top, #9477b4 0%, #fc73b4 100%);
-    background: -webkit-linear-gradient(top, #9477b4 0%, #fc73b4 100%);
-    background: linear-gradient(to bottom, #9477b4 0%, #fc73b4 100%);
+    background: -moz-linear-gradient(top, #9477b4 0%,  #a472c0 33%, #fc73b4 100%);
+    background: -webkit-linear-gradient(top, #9477b4 0%,  #a472c0 33%, #fc73b4 100%);
+    background: linear-gradient(to bottom, #9477b4 0%, #a472c0 33%, #fc73b4 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -334,7 +341,7 @@ header {
 }
 
 .card.features:hover {
-    transform: translateY(-3px);
+    transform: translateY(-4px);
     -moz-box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.08);
     -webkit-box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.08);
     box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.08);
@@ -346,7 +353,7 @@ header {
     width: 70px;
     border-radius: 3px;
     margin-bottom: 1.5rem;
-    background-color: #FFF;
+    background-color: #fff;
 }
 
 .circle-icon {
@@ -357,11 +364,11 @@ header {
     border-radius: 50%;
     margin-bottom: 1.5rem;
     background-color: #FFF;
-    color: #633991;
+    color: #a472c0;
     font-size: 48px;
     text-align: center;
     line-height: 80px;
-    font-weight: 300;
+    font-weight: 400;
     transition: all 0.3s ease;
 }
 
@@ -394,11 +401,17 @@ header {
 .perspective-phone {
     position: relative;
     z-index: -1;
+    padding: 2em 1em;
 }
-
+.newPhone{
+    width: 100%;
+}
 @media (min-width:992px) {
     .perspective-phone {
-        margin-top: -150px;
+    left: 0;
+    width: 50%;
+    padding: 2em;    
+    margin-top: -500px;    
     }
 }
 
@@ -438,14 +451,14 @@ header {
     padding: 1rem 1rem;
     border-color: #faf6fb #faf6fb #FFF;
     font-size: 19px;
-    color: #b5a4c8;
+    color: #a472c0;
     background: #f5eff7;
 }
 
 .nav-tabs .nav-link.active {
     background: #FFF;
     border-top-width: 3px;
-    border-color: #ce75b4 #faf6fb #FFF;
+    border-color: #a472c0 #ce75b4 #faf6fb #FFF;
     color: #633991;
 }
 
@@ -508,7 +521,7 @@ header {
 }
 
 .owl-theme .owl-dots .owl-dot.active span {
-    background: #ff487e;
+    background: #a472c0;
     box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.07);
 }
 
@@ -517,6 +530,7 @@ header {
 ----------------------*/
 
 .img-gallery .owl-item {
+    padding: 2em .5em;
     box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.07);
     transform: scale(0.8);
     transition: all 0.3s ease-in;
@@ -608,7 +622,7 @@ header {
 .call-to-action .tagline {
     font-size: 16px;
     font-weight: 300;
-    color: #ffb8f6;
+    color: #ffb;
     max-width: 650px;
     margin: 0 auto;
 }
@@ -627,7 +641,7 @@ header {
 }
 
 .social-icons a {
-    background-color: #FFF;
+    background-color: #fff;
     box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.05);
     width: 50px;
     height: 50px;
@@ -636,13 +650,16 @@ header {
     line-height: 50px;
     margin: 0 0.3rem;
     border-radius: 5px;
-    color: #633991;
+    color: #a472c0;
+    font-weight: 700;
+    font-size: 1.25em;
     transition: all 0.3s ease;
 }
 
 .social-icons a:hover {
     text-decoration: none;
-    color: #e38cb7;
+    color: #fff;
+    background: #633991;
 }
 
 @media (max-width:991px) {
