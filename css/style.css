@@ -116,11 +116,10 @@ p.lead {
     background-image: -moz-linear-gradient( 90deg, #633991 0%, #a472c0 10%, #a472c0 93%, #d6619c 100%);
     background-image: -webkit-linear-gradient( 90deg, #633991 0%, #a472c0 10%, #a472c0 93%, #d6619c 100%);
     background-image: -ms-linear-gradient( 90deg, #633991 0%, #a472c0 10%, #a472c0 93%, #d6619c 100%);
-    
     background-image: linear-gradient( 1deg, #633991 0%, #a472c0 10%, #a472c0 93%, #d6619c 100%);
     box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.6);
     font-weight: 700;
-    padding:15px 20px;
+    padding: 15px 20px;
     border: 0;
     transition: all 5s;
 }
@@ -191,12 +190,10 @@ p.lead {
 
 .nav-menu.is-scrolling,
 .nav-menu.menu-is-open {
-    background-color: rgba(74, 13, 143,.1);
-    
-    background: -moz-linear-gradient(45deg, rgb(74, 13, 143) 0%, rgb(164,114,192) 33%, rgb(250, 42, 143) 100%);
-    background: -webkit-linear-gradient(45deg, rgb(74, 13, 143) 0%, rgb(164,114,192) 33%, rgb(250, 42, 143) 100%);
-    background: linear-gradient(25deg, rgb(74, 13, 143) 0%, rgb(164,114,192) 50%, rgb(250, 42, 143) 100%);
-    
+    background-color: rgba(74, 13, 143, .1);
+    background: -moz-linear-gradient(45deg, rgb(74, 13, 143) 0%, rgb(164, 114, 192) 33%, rgb(250, 42, 143) 100%);
+    background: -webkit-linear-gradient(45deg, rgb(74, 13, 143) 0%, rgb(164, 114, 192) 33%, rgb(250, 42, 143) 100%);
+    background: linear-gradient(25deg, rgb(74, 13, 143) 0%, rgb(164, 114, 192) 50%, rgb(250, 42, 143) 100%);
     -webkit-box-shadow: 0px 5px 23px 0px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0px 5px 23px 0px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 5px 23px 0px rgba(0, 0, 0, 0.1);
@@ -209,9 +206,11 @@ p.lead {
 .navbar-nav .nav-link {
     position: relative;
 }
-.navbar-brand img{
+
+.navbar-brand img {
     width: 70%;
 }
+
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: 1rem;
@@ -227,7 +226,7 @@ p.lead {
         height: 1px;
         position: absolute;
     }
-    .navbar-brand img{
+    .navbar-brand img {
         width: 90%;
     }
 }
@@ -253,13 +252,14 @@ header {
 
 .bg-gradient {
     background: url(https://i.imgur.com/OpZLXyL.jpg);
-/*
+    /*
     background-image: -moz-linear-gradient( 135deg, rgba(60, 8, 118, 0.8) 0%, rgba(250, 0, 118, 0.8) 100%);
     background-image: -webkit-linear-gradient( 135deg, rgba(60, 8, 118, 0.8) 0%, rgba(250, 0, 118, 0.8) 100%);
     background-image: -ms-linear-gradient( 135deg, rgba(60, 8, 118, 0.8) 0%, rgba(250, 0, 118, 0.8) 100%);
     background-image: linear-gradient( 135deg, rgba(60, 8, 118, 0.8) 0%, rgba(250, 0, 118, 0.8) 100%);
 */
 }
+
 .bg-gradient2 {
     background: url(../images/mountainview.jpg);
 }
@@ -299,8 +299,8 @@ header {
 
 .gradient-fill:before {
     color: #fc73b4;
-    background: -moz-linear-gradient(top, #9477b4 0%,  #a472c0 33%, #fc73b4 100%);
-    background: -webkit-linear-gradient(top, #9477b4 0%,  #a472c0 33%, #fc73b4 100%);
+    background: -moz-linear-gradient(top, #9477b4 0%, #a472c0 33%, #fc73b4 100%);
+    background: -webkit-linear-gradient(top, #9477b4 0%, #a472c0 33%, #fc73b4 100%);
     background: linear-gradient(to bottom, #9477b4 0%, #a472c0 33%, #fc73b4 100%);
     -webkit-background-clip: text;
     background-clip: text;
@@ -403,15 +403,17 @@ header {
     z-index: -1;
     padding: 2em 1em;
 }
-.newPhone{
+
+.newPhone {
     width: 100%;
 }
+
 @media (min-width:992px) {
     .perspective-phone {
-    left: 0;
-    width: 50%;
-    padding: 2em;    
-    margin-top: -500px;    
+        left: 0;
+        width: 50%;
+        padding: 2em;
+        margin-top: -500px;
     }
 }
 
@@ -636,6 +638,10 @@ header {
 /*  FOOTER
 ----------------------*/
 
+footer {
+    padding: .5em 1em;
+}
+
 .social-icons {
     text-align: right;
 }
@@ -669,6 +675,12 @@ header {
     }
 }
 
-.hide{
+.hide {
     display: none;
+}
+
+@media screen and (min-width: 500px) {
+    footer {
+        padding: 1em 10vw;
+    }
 }
