@@ -289,6 +289,23 @@ header {
 }
 
 /* ------Badges --------- */
+
+.badges {
+     text-align: center;
+     display: flex;
+     height: 100px;
+}
+
+.badges img {
+     vertical-align: middle;
+     height: 7vw;
+}
+
+.badge {
+     padding: 1vw;
+     width: 20%;
+}
+
 div.gnp_trb {
      visibility: hidden;
 }
